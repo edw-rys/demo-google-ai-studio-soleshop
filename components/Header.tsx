@@ -38,44 +38,47 @@ export const Header: React.FC<HeaderProps> = ({ cartCount, user, onToggleCart, o
   return (
     <header className="sticky top-0 z-50 w-full bg-sole-bg/95 backdrop-blur-sm shadow-sm border-b border-sole-pink/20 transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="relative flex items-center justify-between h-20">
           
-          {/* Mobile Menu Button */}
-          <div className="flex items-center md:hidden">
-            <button 
-              className="text-sole-text hover:text-sole-terra p-2"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+          {/* Left Section: Nav & Mobile Menu */}
+          <div className="flex-1 flex items-center justify-start">
+              {/* Mobile Menu Button */}
+              <div className="flex items-center md:hidden">
+                <button 
+                  className="text-sole-text hover:text-sole-terra p-2"
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                >
+                  {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                </button>
+              </div>
+
+              {/* Desktop Navigation - Now on the Left */}
+              <nav className="hidden md:flex space-x-6">
+                <button onClick={() => handleNavClick('HOME')} className="text-sole-text hover:text-sole-terra font-medium transition-colors text-sm uppercase tracking-wide">Inicio</button>
+                <button onClick={() => handleNavClick('SHOP')} className="text-sole-text hover:text-sole-terra font-medium transition-colors text-sm uppercase tracking-wide">Tienda</button>
+                <button onClick={() => handleNavClick('ROUTINE')} className="text-sole-text hover:text-sole-terra font-medium transition-colors text-sm uppercase tracking-wide">Rutinas</button>
+                <button onClick={() => handleNavClick('ABOUT')} className="text-sole-text hover:text-sole-terra font-medium transition-colors text-sm uppercase tracking-wide">Nosotros</button>
+                <button onClick={() => handleNavClick('CONTACT')} className="text-sole-text hover:text-sole-terra font-medium transition-colors text-sm uppercase tracking-wide">Contacto</button>
+              </nav>
           </div>
 
-          {/* Logo */}
-          <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => handleNavClick('HOME')}>
-            <div className="flex flex-col items-center md:items-start">
-              <span className="font-serif text-3xl font-bold text-red-900 tracking-wide">Sole</span>
-              <span className="text-[0.65rem] uppercase tracking-[0.2em] text-sole-terra font-bold">Skin & Beauty</span>
-            </div>
+          {/* Center Section: Logo (Absolute Positioning) */}
+          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+              <div className="flex flex-col items-center cursor-pointer" onClick={() => handleNavClick('HOME')}>
+                <span className="font-serif text-3xl font-bold text-red-900 tracking-wide">Sole</span>
+                <span className="text-[0.65rem] uppercase tracking-[0.2em] text-sole-terra font-bold">Skin & Beauty</span>
+              </div>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <button onClick={() => handleNavClick('HOME')} className="text-sole-text hover:text-sole-terra font-medium transition-colors">Inicio</button>
-            <button onClick={() => handleNavClick('SHOP')} className="text-sole-text hover:text-sole-terra font-medium transition-colors">Tienda</button>
-            <button onClick={() => handleNavClick('ABOUT')} className="text-sole-text hover:text-sole-terra font-medium transition-colors">Nosotros</button>
-            <button onClick={() => handleNavClick('ROUTINE')} className="text-sole-text hover:text-sole-terra font-medium transition-colors">Rutina Facial</button>
-            <button onClick={() => handleNavClick('CONTACT')} className="text-sole-text hover:text-sole-terra font-medium transition-colors">Contacto</button>
-          </nav>
-
-          {/* Icons */}
-          <div className="flex items-center space-x-4">
+          {/* Right Section: Icons */}
+          <div className="flex-1 flex items-center justify-end space-x-4">
             <form onSubmit={handleSearchSubmit} className="hidden md:flex relative">
               <input 
                 type="text" 
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Buscar..." 
-                className="pl-3 pr-8 py-1 rounded-full bg-white/50 border-none focus:ring-1 focus:ring-sole-terra text-sm w-32 focus:w-48 transition-all duration-300"
+                className="pl-3 pr-8 py-1 rounded-full bg-white/50 border-none focus:ring-1 focus:ring-sole-terra text-sm w-32 focus:w-48 transition-all duration-300 placeholder-gray-400"
               />
               <button type="submit" className="absolute right-2 top-1.5 text-gray-400 hover:text-sole-terra">
                 <Search size={16} />
@@ -93,7 +96,7 @@ export const Header: React.FC<HeaderProps> = ({ cartCount, user, onToggleCart, o
 
               {/* User Dropdown */}
               {showUserMenu && user && (
-                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg py-2 animate-fade-in border border-gray-100">
+                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg py-2 animate-fade-in border border-gray-100 z-50">
                     <div className="px-4 py-2 border-b border-gray-50">
                         <p className="text-xs text-gray-500">Conectada como</p>
                         <p className="font-bold text-sm text-gray-900 truncate">{user.email}</p>
