@@ -1,0 +1,33 @@
+image: node:18-alpine
+
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+build_site:
+  stage: build
+  script:
+    - npm ci
+    - npm run build
+  artifacts:
+    paths:
+      - dist
+
+deploy_to_github:
+  stage: deploy
+  before_script:
+    - apk add --no-cache git
+    - git config --global user.name "GitLab CI"
+    - git config --global user.email "ci@gitlab.com"
+  script:
+    - echo "Deploying to GitHub Pages..."
+    # This command uses the gh-pages package to push the 'dist' folder 
+    # to the 'gh-pages' branch of your GitHub repository.
+    - npx gh-pages -d dist -r https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}.git -u "GitLab CI <ci@gitlab.com>"
+  only:
+    - main
+    - master

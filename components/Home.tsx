@@ -121,7 +121,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onViewDetail, onAddToCar
                         <div className="relative">
                             <div className="absolute inset-0 bg-sole-light rounded-full opacity-30 blur-3xl animate-pulse"></div>
                             <img 
-                                src="https://images.unsplash.com/photo-1550939810-cb345b2f4d2c?q=80&w=800&auto=format&fit=crop" 
+                                src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=800&auto=format&fit=crop" 
                                 alt="Science" 
                                 className="relative z-10 w-full rounded-[2.5rem] shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-700"
                             />
