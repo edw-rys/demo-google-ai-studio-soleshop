@@ -19,7 +19,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onViewDetail, onAddToCar
     const trendingProducts = PRODUCTS.slice(0, 3); 
 
     return (
-        <div className="animate-fade-in overflow-hidden bg-sole-bg">
+        <div className="animate-fade-in overflow-hidden ">
             <Hero onAddToCart={onAddToCart} />
 
             {/* Trust Marquee - Essence Style (Bold & Informative) */}

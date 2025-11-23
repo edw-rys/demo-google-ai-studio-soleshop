@@ -14,7 +14,7 @@ const HERO_SLIDES = [
     title: "Glow Natural",
     subtitle: "Tu piel, más radiante que nunca con el poder de la vitamina C.",
     productId: 7, // Vitamin C Radiance Serum
-    color: "bg-[#ebdad3]", // Default beige
+    color: "bg-[#fcedeb]", // Default beige
     accent: "#e48035",
   },
   {
