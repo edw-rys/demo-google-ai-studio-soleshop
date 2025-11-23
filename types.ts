@@ -9,6 +9,7 @@ export interface Product {
   description: string;
   benefits: string[];
   ingredients: string;
+  hidden?:boolean;
 }
 
 export interface CartItem extends Product {

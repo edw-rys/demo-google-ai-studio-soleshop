@@ -35,7 +35,7 @@ export const Shop: React.FC<ShopProps> = ({ initialSearchQuery = '', onViewDetai
 
   // Filter Logic
   const filteredProducts = useMemo(() => {
-    return PRODUCTS.filter(product => {
+    return PRODUCTS.filter( product => !product.hidden).filter(product => {
       const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
                             product.description.toLowerCase().includes(searchQuery.toLowerCase());
       const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(product.category);
@@ -67,7 +67,7 @@ export const Shop: React.FC<ShopProps> = ({ initialSearchQuery = '', onViewDetai
   };
 
   return (
-    <div className="min-h-screen bg-sole-bg animate-fade-in">
+    <div className="min-h-screen bg-sole-bg animate-fade-in bg-white">
       
       {/* Breadcrumb Banner */}
       <div className="bg-sole-pink/10 py-8 border-b border-sole-pink/20">

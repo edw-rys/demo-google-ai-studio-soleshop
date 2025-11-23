@@ -9,7 +9,7 @@ export const About: React.FC = () => {
       {/* Hero Section */}
       <div className="relative h-[500px] overflow-hidden">
          <img 
-            src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1920&q=80" 
+            src="https://greenlife.com.ec/wp-content/uploads/2020/08/Mesa-de-trabajo-13.webp" 
             alt="About Sole" 
             className="w-full h-full object-cover opacity-90"
          />

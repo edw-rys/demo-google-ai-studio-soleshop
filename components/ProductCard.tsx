@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Star, ShoppingBag, Eye } from 'lucide-react';
 import { Product } from '../types';
@@ -11,7 +10,7 @@ interface ProductCardProps {
 
 export const ProductCard: React.FC<ProductCardProps> = ({ product, onViewDetail, onAddToCart }) => {
   return (
-    <div className="group relative bg-white rounded-[2rem] p-4 transition-all duration-500 hover:shadow-2xl hover:shadow-sole-pink/10 flex flex-col h-full border border-transparent hover:border-sole-pink/30 overflow-hidden">
+    <div className="group relative bg-white rounded-[2rem] p-4 transition-all duration-500 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-2xl hover:shadow-sole-pink/10 flex flex-col h-full border border-transparent hover:border-sole-pink/30 overflow-hidden">
       
       {/* Image Container */}
       <div className="relative aspect-[4/5] rounded-[1.5rem] overflow-hidden bg-[#f8f8f8] mb-5 cursor-pointer" onClick={() => onViewDetail(product)}>

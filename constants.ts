@@ -41,10 +41,11 @@ export const PRODUCTS: Product[] = [
     category: "Limpieza",
     price: 22.00,
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1608248597279-f99d160bfbc8?q=80&w=800&auto=format&fit=crop",
+    image: "https://greenlife.com.ec/wp-content/uploads/2020/08/Producto-1@2x-1.png",
     description: "Tónico suave con ácidos AHA/BHA que elimina células muertas y revela una piel radiante y uniforme.",
     benefits: ["Exfoliación suave", "Poros menos visibles", "Tono uniforme"],
-    ingredients: "Ácido Glicólico, Aloe Vera, Ginseng"
+    ingredients: "Ácido Glicólico, Aloe Vera, Ginseng",
+    hidden: false
   },
   {
     id: 5,
@@ -55,7 +56,8 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?q=80&w=800&auto=format&fit=crop",
     description: "Tratamiento específico para el contorno de ojos que reduce bolsas y ojeras con un aplicador refrescante.",
     benefits: ["Reduce hinchazón", "Ilumina la mirada", "Combate patas de gallo"],
-    ingredients: "Cafeína, Retinol suave, Pepino"
+    ingredients: "Cafeína, Retinol suave, Pepino",
+    hidden: false
   },
   {
     id: 6,
@@ -66,7 +68,8 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?q=80&w=800&auto=format&fit=crop",
     description: "Bruma facial refrescante con extracto de rosas reales. Ideal para rehidratar la piel durante el día.",
     benefits: ["Refresco instantáneo", "Fijador de maquillaje", "Aroma relajante"],
-    ingredients: "Agua de Rosas, Glicerina vegetal"
+    ingredients: "Agua de Rosas, Glicerina vegetal",
+    hidden: false
   },
   {
     id: 7,
@@ -77,7 +80,8 @@ export const PRODUCTS: Product[] = [
     image: "https://greenlife.com.ec/wp-content/uploads/2020/08/Producto-2@2x.png",
     description: "Suero antioxidante potente que ilumina la piel y reduce manchas solares. Un must para las mañanas.",
     benefits: ["Antimanchas", "Iluminador", "Protección ambiental"],
-    ingredients: "Vitamina C pura, Ácido Ferúlico"
+    ingredients: "Vitamina C pura, Ácido Ferúlico",
+    hidden: false
   },
   {
     id: 8,
@@ -85,10 +89,11 @@ export const PRODUCTS: Product[] = [
     category: "Limpieza",
     price: 19.00,
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?q=80&w=800&auto=format&fit=crop",
+    image: "https://greenlife.com.ec/wp-content/uploads/2020/08/chica-crema.png",
     description: "Espuma limpiadora suave que elimina impurezas sin resecar la piel. pH balanceado.",
     benefits: ["Limpieza profunda", "pH balanceado", "Suave con piel sensible"],
-    ingredients: "Té verde, Camomila"
+    ingredients: "Té verde, Camomila",
+    hidden: false
   },
   {
     id: 9,
@@ -99,7 +104,8 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1615397349754-cfa2066a298e?q=80&w=800&auto=format&fit=crop",
     description: "Aceite facial seco con destellos dorados para una piel nutrida y radiante sin sensación grasa.",
     benefits: ["Hidratación intensa", "Acabado glow", "Antioxidante"],
-    ingredients: "Aceite de Jojoba, Rosa Mosqueta, Vitamina E"
+    ingredients: "Aceite de Jojoba, Rosa Mosqueta, Vitamina E",
+    hidden: false
   },
   {
     id: 10,
@@ -110,7 +116,8 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?q=80&w=800&auto=format&fit=crop",
     description: "Bálsamo rico y fundente para pieles muy secas o maduras. Reparación intensiva nocturna.",
     benefits: ["Nutrición intensa", "Reparación barrera", "Calma rojeces"],
-    ingredients: "Manteca de Karité, Escualano"
+    ingredients: "Manteca de Karité, Escualano",
+    hidden: false
   },
   {
     id: 11,
@@ -121,7 +128,8 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1571781535009-2b9e46223139?q=80&w=800&auto=format&fit=crop",
     description: "Tratamiento intensivo para labios secos. Úsala de noche para despertar con labios suaves.",
     benefits: ["Labios suaves", "Hidratación profunda", "Sabor frutos rojos"],
-    ingredients: "Cera de abejas, Aceite de coco"
+    ingredients: "Cera de abejas, Aceite de coco",
+    hidden: false
   },
   {
     id: 12,
@@ -132,7 +140,8 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1597169722592-37490037eb7a?q=80&w=800&auto=format&fit=crop",
     description: "Mascarilla de arcilla rosa que purifica los poros y controla el brillo sin resecar.",
     benefits: ["Purificante", "Control de grasa", "Minimiza poros"],
-    ingredients: "Arcilla Rosa, Caolín"
+    ingredients: "Arcilla Rosa, Caolín",
+    hidden: false
   }
 ];
 

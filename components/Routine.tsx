@@ -49,7 +49,7 @@ export const Routine: React.FC<RoutineProps> = ({ onAddToCart, onViewDetail }) =
       {/* Improved Hero Banner */}
       <div className="relative h-[600px] overflow-hidden">
          <img 
-            src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1920&q=80" 
+            src="https://greenlife.com.ec/wp-content/uploads/2020/08/Mesa-de-trabajo-12.webp" 
             alt="Skincare Routine" 
             className="w-full h-full object-cover"
          />
