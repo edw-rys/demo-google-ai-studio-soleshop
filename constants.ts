@@ -30,7 +30,7 @@ export const PRODUCTS: Product[] = [
     category: "Rutina Facial",
     price: 28.00,
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?q=80&w=800&auto=format&fit=crop", 
+    image: "https://greenlife.com.ec/wp-content/uploads/2020/08/Crema.png", 
     description: "Crema hidratante ligera que se absorbe al instante. Crea una barrera protectora que retiene la humedad por 24 horas.",
     benefits: ["No grasa", "Base perfecta de maquillaje", "Hidratación 24h"],
     ingredients: "Ceramidas, Vitamina E, Agua de Glaciar"

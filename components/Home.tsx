@@ -52,10 +52,10 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onViewDetail, onAddToCar
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                     {[
-                        { title: "Hidratación", icon: Droplets, color: "bg-[#ffbfbf]", img: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?q=80&w=400&auto=format&fit=crop" },
-                        { title: "Anti-Edad", icon: Clock, color: "bg-[#f8a3c0]", img: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400&auto=format&fit=crop" },
-                        { title: "Luminosidad", icon: Sun, color: "bg-[#ebdad3]", img: "https://images.unsplash.com/photo-1617897903246-719242758050?q=80&w=400&auto=format&fit=crop" },
-                        { title: "Poros / Acné", icon: ShieldCheck, color: "bg-[#ffbfbf]", img: "https://images.unsplash.com/photo-1597169722592-37490037eb7a?q=80&w=400&auto=format&fit=crop" }
+                        { title: "Hidratación", icon: Droplets, color: "bg-[#ffbfbf]", img: "https://greenlife.com.ec/wp-content/uploads/2020/08/Hidratacion.png" },
+                        { title: "Anti-Edad", icon: Clock, color: "bg-[#f8a3c0]", img: "https://greenlife.com.ec/wp-content/uploads/2020/08/Anti-edad.png" },
+                        { title: "Luminosidad", icon: Sun, color: "bg-[#ebdad3]", img: "https://greenlife.com.ec/wp-content/uploads/2020/08/Poros-Acne.png" },
+                        { title: "Poros / Acné", icon: ShieldCheck, color: "bg-[#ffbfbf]", img: "https://greenlife.com.ec/wp-content/uploads/2020/08/Luminosidad.png" }
                     ].map((item, idx) => (
                         <div 
                             key={idx} 
