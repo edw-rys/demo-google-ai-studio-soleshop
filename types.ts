@@ -25,7 +25,7 @@ export interface Address {
 
 export interface Order {
   id: string;
-  date: string;
+  date: string; 
   items: CartItem[];
   total: number;
   status: 'processing' | 'shipped' | 'delivered';
