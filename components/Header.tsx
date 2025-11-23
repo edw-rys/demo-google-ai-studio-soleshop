@@ -64,9 +64,12 @@ export const Header: React.FC<HeaderProps> = ({ cartCount, user, onToggleCart, o
 
           {/* Center Section: Logo (Absolute Positioning) */}
           <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-              <div className="flex flex-col items-center cursor-pointer" onClick={() => handleNavClick('HOME')}>
-                <span className="font-serif text-3xl font-bold text-red-900 tracking-wide">Sole</span>
-                <span className="text-[0.65rem] uppercase tracking-[0.2em] text-sole-terra font-bold">Skin & Beauty</span>
+              <div className="cursor-pointer" onClick={() => handleNavClick('HOME')}>
+                <img 
+                  src="https://greenlife.com.ec/wp-content/uploads/2020/08/Logo-Sole@2x.png" 
+                  alt="Sole Skin & Beauty" 
+                  className="h-10 md:h-14 w-auto object-contain"
+                />
               </div>
           </div>
 

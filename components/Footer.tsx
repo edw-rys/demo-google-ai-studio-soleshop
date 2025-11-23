@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Instagram, Facebook, Twitter, Mail } from 'lucide-react';
 import { ViewState, LegalSection } from '../types';
@@ -25,8 +26,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onLegalNavigate }) =
           
           <div className="col-span-1 md:col-span-1">
             <div className="flex flex-col items-start mb-6 cursor-pointer" onClick={(e) => handleNavClick(e, 'HOME')}>
-              <span className="font-serif text-3xl font-bold text-red-900 tracking-wide">Sole</span>
-              <span className="text-[0.65rem] uppercase tracking-[0.2em] text-sole-terra font-bold">Skin & Beauty</span>
+              <img 
+                src="https://greenlife.com.ec/wp-content/uploads/2020/08/Logo-Sole@2x.png" 
+                alt="Sole Skin & Beauty" 
+                className="h-12 w-auto object-contain mb-2"
+              />
             </div>
             <p className="text-gray-500 leading-relaxed">
               Cuidando tu piel con ingredientes conscientes y amor por la naturaleza. Tu belleza, tu ritual.

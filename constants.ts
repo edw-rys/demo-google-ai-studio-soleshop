@@ -8,7 +8,7 @@ export const PRODUCTS: Product[] = [
     category: "Rutina Facial",
     price: 30.00,
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop", 
+    image: "https://greenlife.com.ec/wp-content/uploads/2020/08/Producto-1@2x.png", 
     description: "Un suero concentrado que revitaliza la piel cansada, suaviza las líneas de expresión y aporta una luminosidad instantánea. Ideal para uso diario.",
     benefits: ["Efecto lifting natural", "Hidratación profunda", "Luminosidad inmediata"],
     ingredients: "Ácido Hialurónico, Péptidos, Extracto de Rosa"
@@ -19,7 +19,7 @@ export const PRODUCTS: Product[] = [
     category: "Tratamientos",
     price: 25.00,
     rating: 5.0,
-    image: "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=800&auto=format&fit=crop",
+    image: "https://greenlife.com.ec/wp-content/uploads/2020/08/Producto-3@2x.png",
     description: "Mascarilla nocturna enriquecida con colágeno marino para restaurar la elasticidad de tu piel mientras duermes. Despierta con piel de cristal.",
     benefits: ["Restauración nocturna", "Mayor elasticidad", "Suavidad extrema"],
     ingredients: "Colágeno hidrolizado, Centella Asiática, Niacinamida"
@@ -74,7 +74,7 @@ export const PRODUCTS: Product[] = [
     category: "Rutina Facial",
     price: 32.00,
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1617897903246-719242758050?q=80&w=800&auto=format&fit=crop",
+    image: "https://greenlife.com.ec/wp-content/uploads/2020/08/Producto-2@2x.png",
     description: "Suero antioxidante potente que ilumina la piel y reduce manchas solares. Un must para las mañanas.",
     benefits: ["Antimanchas", "Iluminador", "Protección ambiental"],
     ingredients: "Vitamina C pura, Ácido Ferúlico"
