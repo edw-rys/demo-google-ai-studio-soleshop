@@ -3,7 +3,7 @@ import React from 'react';
 import { Hero } from './Hero';
 import { ProductCard } from './ProductCard';
 import { RevealOnScroll } from './RevealOnScroll';
-import { ArrowRight, Star, Sparkles, Droplets, ShieldCheck, Sun, Mail, Zap, Clock } from 'lucide-react';
+import { ArrowRight, Star, Sparkles, Droplets, ShieldCheck, Sun, Zap, Clock } from 'lucide-react';
 import { Product, ViewState } from '../types';
 import { PRODUCTS } from '../constants';
 
@@ -26,11 +26,10 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onViewDetail, onAddToCar
             <div className="bg-white text-sole-text py-3 border-b border-sole-pink/20 overflow-hidden relative whitespace-nowrap">
                 <div className="inline-block animate-[slideIn_40s_linear_infinite]">
                     {[...Array(8)].map((_, i) => (
-                        <span key={i} className="mx-8 font-bold text-xs tracking-[0.2em] uppercase inline-flex items-center gap-3 text-gray-500">
-                            <Sparkles size={14} className="text-sole-terra" /> DERMATOLÓGICAMENTE TESTEADO
-                            <span className="w-1 h-1 rounded-full bg-sole-pink"></span> CRUELTY FREE
-                            <span className="w-1 h-1 rounded-full bg-sole-pink"></span> VEGANO
-                            <span className="w-1 h-1 rounded-full bg-sole-pink"></span> ENVÍO GRATIS +$899
+                        <span key={i} className="mx-8 font-bold text-xs tracking-[0.2em] uppercase inline-flex items-center gap-3 text-gray-100">
+                            <Sparkles size={14} className="text-sole-terra" /> COMPRA $50 
+                            <span className="w-1 h-1 rounded-full bg-sole-pink"></span> Y ENVÍO GRATIS
+                            <span className="w-1 h-1 rounded-full bg-sole-pink"></span> 
                         </span>
                     ))}
                 </div>
@@ -50,12 +49,13 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onViewDetail, onAddToCar
                     </p>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
                     {[
                         { title: "Hidratación", icon: Droplets, color: "bg-[#ffbfbf]", img: "https://greenlife.com.ec/wp-content/uploads/2020/08/Hidratacion.png" },
                         { title: "Anti-Edad", icon: Clock, color: "bg-[#f8a3c0]", img: "https://greenlife.com.ec/wp-content/uploads/2020/08/Anti-edad.png" },
-                        { title: "Luminosidad", icon: Sun, color: "bg-[#ebdad3]", img: "https://greenlife.com.ec/wp-content/uploads/2020/08/Poros-Acne.png" },
-                        { title: "Poros / Acné", icon: ShieldCheck, color: "bg-[#ffbfbf]", img: "https://greenlife.com.ec/wp-content/uploads/2020/08/Luminosidad.png" }
+                        { title: "Poros / Acné", icon: ShieldCheck, color: "bg-[#ebdad3]", img: "https://greenlife.com.ec/wp-content/uploads/2020/08/Poros-Acne.png" },
+                        { title: "Luminosidad", icon: Sun, color: "bg-[#ebdad3]", img: "https://greenlife.com.ec/wp-content/uploads/2020/08/Luminosidad.png" },
+                        { title: "Manchas", icon: Sparkles, color: "bg-[#ffbfbf]", img: "https://greenlife.com.ec/wp-content/uploads/2020/08/Manchas.png" }
                     ].map((item, idx) => (
                         <div 
                             key={idx} 
@@ -171,7 +171,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onViewDetail, onAddToCar
             </RevealOnScroll>
 
             {/* Spotlight Product - Elegant Style */}
-            <div className="bg-sole-light/30 py-24 overflow-hidden">
+            <div className="bg-sole-light/30 py-24 overflow-hidden mb-12">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <h2 className="font-serif text-4xl font-bold text-gray-900 mb-4">El Favorito del Mes</h2>
@@ -224,31 +224,6 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onViewDetail, onAddToCar
                     </div>
                 </div>
             </div>
-
-            {/* Newsletter - Minimal & Chic */}
-            <RevealOnScroll className="py-24 px-4">
-                <div className="max-w-4xl mx-auto text-center bg-sole-text rounded-[3rem] p-12 md:p-20 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
-                    <div className="relative z-10">
-                        <Mail className="w-12 h-12 text-sole-pink mx-auto mb-6" />
-                        <h2 className="font-serif text-3xl md:text-5xl font-bold text-white mb-4">Sole Beauty Club</h2>
-                        <p className="text-gray-300 mb-10 max-w-lg mx-auto">
-                            Suscríbete para recibir rutinas personalizadas, acceso anticipado a rebajas y <span className="text-sole-pink font-bold">10% OFF</span> en tu primera orden.
-                        </p>
-                        
-                        <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                            <input 
-                                type="email" 
-                                placeholder="Tu correo electrónico" 
-                                className="flex-1 px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-sole-pink transition-all"
-                            />
-                            <button className="bg-sole-terra text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-sole-terra transition-all shadow-lg">
-                                Unirme
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </RevealOnScroll>
         </div>
     );
 };

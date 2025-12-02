@@ -13,6 +13,7 @@ import { Contact } from './components/Contact';
 import { Legal } from './components/Legal';
 import { Auth } from './components/Auth';
 import { Account } from './components/Account';
+import { NewsletterModal } from './components/NewsletterModal';
 import { Product, CartItem, ViewState, LegalSection, User, Order, Address } from './types';
 
 const App: React.FC = () => {
@@ -242,6 +243,8 @@ const App: React.FC = () => {
         onCheckout={handleCheckout}
         total={cartTotal}
       />
+
+      <NewsletterModal />
     </div>
   );
 };
