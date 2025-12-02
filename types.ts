@@ -33,16 +33,16 @@ export interface Order {
   address: Address;
 }
 
-export type ViewState = 'HOME' | 'PRODUCT_DETAIL' | 'CHECKOUT' | 'SUCCESS' | 'SHOP' | 'ABOUT' | 'ROUTINE' | 'CONTACT' | 'LEGAL' | 'LOGIN' | 'ACCOUNT';
-
 export type LegalSection = 'TERMS' | 'FAQ' | 'SHIPPING';
+
+export type ViewState = 'HOME' | 'SHOP' | 'ROUTINE' | 'ABOUT' | 'CONTACT' | 'LEGAL' | 'LOGIN' | 'ACCOUNT' | 'CHECKOUT';
 
 export interface User {
   name: string;
   email: string;
 }
 
-export interface CartContextType {
+export interface StoreContextType {
   cart: CartItem[];
   isCartOpen: boolean;
   toggleCart: () => void;
@@ -52,4 +52,11 @@ export interface CartContextType {
   clearCart: () => void;
   cartTotal: number;
   cartCount: number;
+  
+  user: User | null;
+  login: (user: User) => void;
+  logout: () => void;
+  
+  orders: Order[];
+  addOrder: (order: Order) => void;
 }

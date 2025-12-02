@@ -34,6 +34,10 @@
                 '0%': { transform: 'translateX(20px)', opacity: '0' },
                 '100%': { transform: 'translateX(0)', opacity: '1' },
               },
+              slideInLeft: {
+                '0%': { transform: 'translateX(-100%)' },
+                '100%': { transform: 'translateX(0)' },
+              },
               float: {
                 '0%, 100%': { transform: 'translateY(0px)' },
                 '50%': { transform: 'translateY(-20px)' },
@@ -54,6 +58,7 @@
             animation: {
               'fade-in': 'fadeIn 0.6s ease-out forwards',
               'slide-in': 'slideIn 0.5s ease-out forwards',
+              'slide-in-left': 'slideInLeft 0.3s ease-out forwards',
               'float': 'float 6s ease-in-out infinite',
               'float-delayed': 'floatDelayed 7s ease-in-out infinite',
               'spin-slow': 'spinSlow 20s linear infinite',
@@ -106,10 +111,14 @@
     "react/jsx-runtime": "https://aistudiocdn.com/react@^18.2.0/jsx-runtime",
     "react-dom": "https://aistudiocdn.com/react-dom@^18.2.0",
     "react-dom/client": "https://aistudiocdn.com/react-dom@^18.2.0/client",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "vite": "https://aistudiocdn.com/vite@^7.2.6",
-    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+    "vite": "https://aistudiocdn.com/vite@^5.1.6",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^4.2.1",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^6.22.3",
+    "react-router": "https://aistudiocdn.com/react-router@^6.22.3",
+    "@remix-run/router": "https://aistudiocdn.com/@remix-run/router@^1.15.3",
+    "react-helmet-async": "https://aistudiocdn.com/react-helmet-async@^2.0.5",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
   }
 }
 </script>
