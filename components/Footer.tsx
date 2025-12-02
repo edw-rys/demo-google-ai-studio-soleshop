@@ -20,19 +20,19 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onLegalNavigate }) =
   };
 
   return (
-    <footer className="bg-white pt-20 pb-10 rounded-t-[3rem] mt-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+    <footer className="bg-white pt-12 md:pt-20 pb-10 rounded-t-[3rem] mt-12">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-12 mb-12 md:mb-16 text-center md:text-left">
           
-          <div className="col-span-1 md:col-span-1">
-            <div className="flex flex-col items-start mb-6 cursor-pointer" onClick={(e) => handleNavClick(e, 'HOME')}>
+          <div className="col-span-1 md:col-span-1 flex flex-col items-center md:items-start">
+            <div className="flex flex-col items-center md:items-start mb-6 cursor-pointer" onClick={(e) => handleNavClick(e, 'HOME')}>
               <img 
                 src="https://greenlife.com.ec/wp-content/uploads/2020/08/Logo-Sole@2x.png" 
                 alt="Sole Skin & Beauty" 
                 className="h-12 w-auto object-contain mb-2"
               />
             </div>
-            <p className="text-gray-500 leading-relaxed">
+            <p className="text-gray-500 leading-relaxed max-w-sm">
               Cuidando tu piel con ingredientes conscientes y amor por la naturaleza. Tu belleza, tu ritual.
             </p>
           </div>
@@ -57,7 +57,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onLegalNavigate }) =
             </ul>
           </div>
 
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <h4 className="font-bold text-gray-900 mb-6 uppercase text-sm tracking-wider">Síguenos</h4>
             <div className="flex space-x-4 mb-8">
               <a href="#" className="w-10 h-10 rounded-full bg-sole-bg flex items-center justify-center text-sole-terra hover:bg-sole-terra hover:text-white transition-colors">

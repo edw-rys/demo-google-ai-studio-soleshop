@@ -160,25 +160,6 @@ export const Routine: React.FC<RoutineProps> = ({ onAddToCart, onViewDetail }) =
             );
          })}
       </div>
-
-      {/* Quiz Banner */}
-      <RevealOnScroll className="mt-32 px-4">
-         <div className="max-w-5xl mx-auto bg-sole-text rounded-[3rem] overflow-hidden relative">
-            <div className="absolute inset-0 opacity-20">
-                <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1920&q=80" className="w-full h-full object-cover" />
-            </div>
-            <div className="relative z-10 p-12 md:p-20 text-center">
-               <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-6">¿Tu piel necesita algo específico?</h2>
-               <p className="text-gray-300 text-xl mb-10 max-w-2xl mx-auto">
-                  Cada piel es un mundo. Realiza nuestro diagnóstico gratuito y recibe una rutina 100% personalizada por nuestros expertos.
-               </p>
-               <button className="bg-white text-sole-text px-10 py-4 rounded-full font-bold text-lg hover:bg-sole-terra hover:text-white transition-all shadow-xl flex items-center gap-2 mx-auto">
-                  Realizar diagnóstico <ArrowRight size={20} />
-               </button>
-            </div>
-         </div>
-      </RevealOnScroll>
-
     </div>
   );
 };

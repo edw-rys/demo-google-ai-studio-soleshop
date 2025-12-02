@@ -26,7 +26,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onViewDetail, onAddToCar
             <div className="bg-white text-sole-text py-3 border-b border-sole-pink/20 overflow-hidden relative whitespace-nowrap">
                 <div className="inline-block animate-[slideIn_40s_linear_infinite]">
                     {[...Array(8)].map((_, i) => (
-                        <span key={i} className="mx-8 font-bold text-xs tracking-[0.2em] uppercase inline-flex items-center gap-3 text-gray-100">
+                        <span key={i} className="mx-8 font-bold text-xs tracking-[0.2em] uppercase inline-flex items-center gap-3 text-gray-800">
                             <Sparkles size={14} className="text-sole-terra" /> COMPRA $50 
                             <span className="w-1 h-1 rounded-full bg-sole-pink"></span> Y ENVÍO GRATIS
                             <span className="w-1 h-1 rounded-full bg-sole-pink"></span> 
@@ -208,7 +208,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onViewDetail, onAddToCar
                             </div>
                         </div>
                         <div className="w-full md:w-1/2 order-1 md:order-2 flex justify-center">
-                             <div className="relative w-[350px] h-[350px] md:w-[450px] md:h-[450px]">
+                             <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px]">
                                  <div className="absolute inset-0 bg-sole-pink/20 rounded-full animate-pulse"></div>
                                  <img 
                                     src={spotlightProduct.image} 

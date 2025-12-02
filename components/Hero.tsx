@@ -49,7 +49,7 @@ export const Hero: React.FC<HeroProps> = ({ onAddToCart }) => {
   const currentProduct = PRODUCTS.find(p => p.id === currentSlide.productId) || PRODUCTS[0];
 
   return (
-    <section className="relative w-full h-[700px] md:h-[800px] overflow-hidden bg-sole-bg flex items-center justify-center">
+    <section className="relative w-full min-h-[700px] md:h-[800px] overflow-hidden bg-sole-bg flex items-center justify-center pt-16 md:pt-0">
       
       {/* Nature Background Elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -60,15 +60,9 @@ export const Hero: React.FC<HeroProps> = ({ onAddToCart }) => {
             <Leaf className="absolute left-0 top-1/2 text-sole-terra/20 w-12 h-12 -translate-x-6 -translate-y-1/2 -rotate-90" />
             <Leaf className="absolute right-0 top-1/2 text-sole-terra/20 w-12 h-12 translate-x-6 -translate-y-1/2 rotate-90" />
          </div>
-
-         {/* Floating Leaves */}
-         <Leaf className="absolute top-20 left-[5%] text-green-800/20 w-16 h-16 animate-float" />
-         <Leaf className="absolute bottom-32 right-[10%] text-green-700/20 w-20 h-20 animate-float-delayed rotate-45" />
-         <Leaf className="absolute top-1/3 right-[5%] text-green-600/10 w-10 h-10 animate-float rotate-12" />
-         <Leaf className="absolute bottom-10 left-[20%] text-sole-terra/20 w-14 h-14 animate-float-delayed -rotate-12" />
       </div>
 
-      <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 items-center gap-8 h-full">
+      <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 items-center gap-8 h-full py-12 md:py-0">
         
         {/* Left: Text Content */}
         <div className="text-center md:text-left order-2 md:order-1">
@@ -108,7 +102,7 @@ export const Hero: React.FC<HeroProps> = ({ onAddToCart }) => {
         </div>
 
         {/* Right: Circular Product Showcase */}
-        <div className="relative order-1 md:order-2 flex justify-center items-center h-full">
+        <div className="relative order-1 md:order-2 flex justify-center items-center h-full min-h-[400px]">
              {HERO_SLIDES.map((slide, index) => {
                  const product = PRODUCTS.find(p => p.id === slide.productId);
                  if (!product) return null;
@@ -123,7 +117,7 @@ export const Hero: React.FC<HeroProps> = ({ onAddToCart }) => {
                         }`}
                     >
                         {/* Large Background Circle */}
-                        <div className={`relative w-[350px] h-[350px] md:w-[550px] md:h-[550px] rounded-full transition-colors duration-1000 ${slide.color} shadow-2xl flex items-center justify-center`}>
+                        <div className={`relative w-[300px] h-[300px] md:w-[550px] md:h-[550px] rounded-full transition-colors duration-1000 ${slide.color} shadow-2xl flex items-center justify-center`}>
                              
                              {/* Inner Rotating Rings */}
                              <div className="absolute inset-4 border border-white/40 rounded-full animate-spin-slow"></div>
